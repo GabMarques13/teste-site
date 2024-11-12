@@ -1,0 +1,146 @@
+/* ================================
+   RESET E CONFIGURAÇÃO GLOBAL
+===================================*/
+
+/* Definição global de bordas e espaçamento para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Inclui as bordas e o preenchimento no tamanho total do elemento */
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Definição de fonte limpa e legível */
+    line-height: 1.6; /* Aumenta o espaçamento entre as linhas para melhorar a legibilidade */
+    background-color: #f4f4f9; /* Cor suave de fundo */
+    color: #333; /* Cor escura para o texto */
+    display: grid;
+    justify-content: center;
+    align-items: stretch;
+    min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
+    padding: 20px;
+}
+
+/* ================================
+     ESTRUTURA DO CONTEÚDO PRINCIPAL
+===================================*/
+
+main {
+    width: 900px;
+    max-width: 900px;
+    margin: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor do conteúdo principal */
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #4d23e7e0; /* Cor roxa para o título principal */
+    margin-bottom: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #333; /* Cor de fundo escura para o cabeçalho */
+    color: #f4f4f9; /* Cor branca para o texto no cabeçalho */
+    border-radius: 30px; /* Bordas arredondadas no cabeçalho */
+}
+
+header .logo {
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.event-info, .schedule, .activities, .location-details, .accommodation, .registration-form {
+    margin-bottom: 30px; /* Espaçamento entre as seções */
+}
+
+/* ================================
+     ESTILOS DE SEÇÕES
+===================================*/
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+}
+
+h3, h4 {
+    margin-top: 20px;
+    color: #555; /* Cor para subtítulos */
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+}
+
+.registration-form input,
+.registration-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Borda fina e suave */
+    border-radius: 5px;
+}
+
+.registration-form button {
+    background-color: #333; /* Cor de fundo do botão */
+    color: white;
+    cursor: pointer;
+}
+
+.registration-form button:hover {
+    background-color: #555; /* Cor de fundo ao passar o mouse no botão */
+}
+
+/* ================================
+     IMAGEM DO EVENTO
+===================================*/
+
+.event-image {
+    width: 70%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px; /* Bordas arredondadas nas imagens */
+    margin-top: 20px;
+}
+
+/* ================================
+     EXIBIÇÃO DO CERTIFICADO
+===================================*/
+
+.hidden {
+    display: none; /* Esconde os elementos com essa classe */
+}
+
+/* ================================
+     CONFIGURAÇÃO DO FORMULÁRIO
+===================================*/
+
+input, button {
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+
+button[type="submit"] {
+    background-color: #4d23e7e0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #7325b2;
+}

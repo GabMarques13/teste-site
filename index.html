@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site de Eventos - Conferência TechWave</title>
+  <!-- Link para o arquivo CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Cabeçalho do site -->
+  <header>
+    <!-- Logo do evento -->
+    <img src="https://st2.depositphotos.com/3867453/6512/v/950/depositphotos_65122799-stock-illustration-letter-f-wing-flag-logo.jpg" alt="logo" class="logo">
+    <!-- Nome do evento -->
+    <h1>Festivity.Com</h1>
+  </header>
+
+  <!-- Corpo principal do conteúdo -->
+  <main>
+    <!-- Informações do evento -->
+    <section class="event-info">
+      <h2>4ª Conferência TechWave</h2>
+      <p class="location">Rio de Janeiro, Brasil</p>
+      <p>A Conferência TechWave é um dos maiores eventos de tecnologia, atraindo desenvolvedores, engenheiros, empresários e entusiastas de todo o país. Com programação diversificada, a edição de 2025 oferece um ambiente propício para aprendizado, networking e inovação.</p>
+    </section>
+
+    <!-- Agenda do evento -->
+    <section class="schedule">
+      <h3>Principais atrações dessa edição:</h3>
+      <h4>Palestras: Das 8h às 12h</h4>
+      <ul>
+        <li><strong>Bertha Lutz</strong> - ByteX - 20/05</li>
+        <li><strong>Laura Medeiros</strong> - PixelHub - 21/05</li>
+        <li><strong>César Vilar</strong> - Codexia - 20/05</li>
+        <li><strong>Igor Neri</strong> - UNB - 21/05</li>
+      </ul>
+
+      <h4>Workshops: Das 12h30 às 19h</h4>
+      <ul>
+        <li>Programação Básica - 20/05</li>
+        <li>Desenvolvimento Web com React - 21/05</li>
+        <li>Introdução à Realidade Aumentada (AR) - 20/05</li>
+        <li>Criação de Chatbots com IA - 21/05</li>
+        <li>Blockchain e Criptomoedas - 20/05</li>
+        <li>Automação de Tarefas com Python - 21/05</li>
+      </ul>
+    </section>
+
+    <!-- Atividades especiais -->
+    <section class="activities">
+      <h4>Atividades Especiais: Das 12h30 às 19h</h4>
+      <p>Além de palestras e workshops, o evento contará com sessões de networking, hackathons e demonstrações interativas.</p>
+    </section>
+
+    <!-- Imagem representativa do evento -->
+    <section class="image-section">
+      <img src="https://www.findup.com.br/wp-content/uploads/2021/07/tech-devices-and-icons-connected-to-digital-planet-earth-2-1080x710.jpg" alt="Imagem representativa do evento" class="event-image">
+    </section>
+
+    <!-- Detalhes de localização e data -->
+    <section class="location-details">
+      <h3>Data e Local</h3>
+      <p><strong>20 e 21 de maio</strong> - das 08h às 19h</p>
+      <p><strong>RIOCENTRO</strong> - Av. Salvador Allende, 6555 - Barra Olímpica, Rio de Janeiro - RJ</p>
+    </section>
+
+    <!-- Opções de hospedagem próximas -->
+    <section class="accommodation">
+      <h3>Hospedagem Próxima</h3>
+      <ul>
+        <li>Ibis Rio de Janeiro Parque Olímpico</li>
+        <li>Lagune Barra Hotel</li>
+        <li>Grand Hyatt Rio de Janeiro</li>
+        <li>Américas Barra Hotel</li>
+      </ul>
+    </section>
+
+    <!-- Formulário de inscrição -->
+    <section class="registration-form">
+      <h3>Inscreva-se Agora</h3>
+      <form id="inscricaoForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="numero">Telefone:</label>
+        <input type="tel" id="numero" name="numero" required>
+        
+        <button type="submit">Enviar</button>
+      </form>
+
+      <!-- Botão para gerar o certificado -->
+      <button id="gerarCertificado" style="display:none;">Gerar Certificado</button>
+    </section>
+
+    <!-- Div de confirmação de inscrição (inicialmente oculta) -->
+    <div id="confirmacaoDiv" class="hidden">
+      <p>Você foi inscrito com sucesso! <strong>Agora você pode gerar seu certificado digital.</strong></p>
+    </div>
+  </main>
+
+  <!-- Referência ao arquivo JS externo -->
+  <script src="script.js"></script>
+  <!-- Incluindo o CDN do jsPDF para gerar o certificado -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</body>
+</html>
